@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Maxim Borisov](https://up.htmlacademy.ru/htmlcss/13/user/74180).
-* Наставник: `Неизвестно`.
+* Наставник: [Женя Михайлова] (https://htmlacademy.ru/profile/id56156).
 
 ---
 
