@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Нердс</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="index-logo">
+        <img src="http://placehold.it/80x40">
+      </div>
+			<nav class="main-navigation">
+				<ul>
+					<li class="active">
+						<a href="#">студия</a>
+					</li>
+					<li>
+						<a href="#">клиенты</a>
+					</li>
+					<li>
+						<a href="#">магазин</a>
+					</li>
+					<li>
+						<a href="#">контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+      	<a href="#" class="basket">корзина</a>
+			</div>
+			<h1>Добро пожаловать в магазин  готовых макетов</h1>
+		</div>
+	</header>
+	<main class="container">
+		<div class="sidebar">
+			<form name="filter" action="/echo" method="get">
+			  <p class="filter-title">стоимость:</p>
+				<input type="range" name="price-range" id="price-range-field"><br>
+				<label for="from-field">от</label><br>
+				<input type="text" name="from" value="0" id="from-field"><br>
+				<label for="to-field">до</label><br>
+				<input type="text" name="to" value="15000" id="to-field"><br>
+        <p class="filter-title">сетка:</p>
+				<input type="radio" name="layout" id="adaptive">
+				<label for="adaptive">Адаптивная</label><br>
+				<input type="radio" name="layout" id="fixed">
+				<label for="fixed">Аиксированная</label><br>
+				<input type="radio" name="layout" id="fluid">
+				<label for="fluid">Резиновая</label><br>
+        <p class="filter-title">особенности:</p>
+				<input type="checkbox" name="slider" id="slider-field" checked>
+				<label for="slider-field">Слайдер</label><br>
+        <input type="checkbox" name="features" id="fetures-field">
+        <label for="fetures-field">Блок преимуществ</label><br>
+        <input type="checkbox" name="news" id="news-field" checked>
+        <label for="news-field">Новости</label><br>
+        <input type="checkbox" name="gallery" id="gallery-field">
+        <label for="gallery-field">Галерея</label><br>
+        <input type="checkbox" name="basket" id="basket-fied">
+        <label for="basket-fied">Корзина</label><br>
+        <input type="submit" value="отправить">
+			</form>
+		</div>
+    <div class="index-content">
+	  	<div class="gallery-sorting-tools">
+	  		<p>сортировать</p>
+	  		<div class="sorting-btn-wrapper">
+	  			<button class="sorting-btn">по цене</button>
+	  			<button class="sorting-btn">по типу</button>
+	  			<button class="sorting-btn">по функционалу</button>
+	  		</div>
+	  		<div class="sorting-item-wrapper">
+	  			<button class="sorting-item"></button>
+	  			<button class="sorting-item"></button>
+	  		</div>
+	  	</div>
+	  	<div class="gallery">
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>AVIATOR</h3>
+        			<p>Одностраничный макет с авторским дизайном</p>
+        			<a class="btn" href="#">8000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>Sunset</h3>
+        			<p>Интернет-магазин с личным кабинетом</p>
+        			<a class="btn" href="#">10000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>FORTE</h3>
+        			<p>Отличный макет для личного блога</p>
+        			<a class="btn" href="#">5000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>Modern Organic THAI</h3>
+        			<p>Сайт для ресторана быстрого питания</p>
+        			<a class="btn" href="#">12000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>AVENUE</h3>
+        			<p>Макет для блога  о путешествиях</p>
+        			<a class="btn" href="#">8000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+	  		<div class="gallery-item">
+	  			<div class="gallery-item-frame">
+	  				<img src="http://placehold.it/240x30">
+	  			</div>
+	  			<div class="gallery-item-image">
+        		<img src="http://placehold.it/240x240">
+        		<div class="gallery-item-description">
+        			<h3>DOVETAIL</h3>
+        			<p>Интернет-магазин с галереей товаров</p>
+        			<a class="btn" href="#">14000 Р.</a>
+        		</div>
+	  			</div>
+	  		</div>
+      </div>
+	    <div class="gallery-paginator">
+	  		<button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn gallery-next">СЛЕДУЮЩАЯ</button>
+	  	</div>
+		</div>
+		<div class="write-us"><!--Всплывающее окно-->
+      	<form action="/echo" method="post">
+      	  <div class="close-window">
+      	  	<img src="http://placehold.it/25x25">
+      	  </div>
+      		<label for="name-field">Ваше имя</label>
+      		<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+      		<label for="email-field">Ваш e-mail</label>
+      		<input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+      		<label for="cooment-field">Текст письма:</label>
+      		<textarea name="comment" id="cooment-field" rows="10">в свободной форме</textarea>
+      		<button type="submit" class="btn-feedback">отправить</button>
+      	</form>
+  	</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-social">
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      </div>
+      <div class="footer-text-wrapper">
+      	<h2>Давайте дружить, это выгодно</h2>
+      	<p>Скидка 10% для друзей из социальных сетей</p>
+      </div>
+		</div>
+	</footer>
+</body>
+</html>
