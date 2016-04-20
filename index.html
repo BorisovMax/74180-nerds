@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Нердс</title>
+	<title>Нёрдс</title>
 </head>
 <body>
 	<header class="main-header">
@@ -59,19 +59,19 @@
 				<img src="http://placehold.it/140x100">
 				<h2>веб-сайты</h2>
 				<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-				<a href="#" class="btn">Заказать</a>
+				<a href="#" class="btn">заказать</a>
 			</div>
 			<div class="apps">
 				<img src="http://placehold.it/140x100">
 				<h2>приложения</h2>
 				<p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-				<a href="#" class="btn">Заказать</a>
+				<a href="#" class="btn">заказать</a>
 			</div>
 			<div class="presentations">
 				<img src="http://placehold.it/140x100">
 				<h2 class="features-name">презентации</h2>
 				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				<a href="#" class="btn">Заказать</a>
+				<a href="#" class="btn">заказать</a>
 			</div>
 		</div>
 		<div class="index-content">
@@ -132,7 +132,7 @@
 		<div class="map">
       <img src="http://placehold.it/800x250">
   		<div class="contacts">
-  			<h2 class="contacts-title">nёrds design studio</h2>
+  			<div class="contacts-title">nёrds design studio</div>
   			<p>
         191186, Санкт-Петербург,<br>
   			ул. Б. Конюшенная, 19/8<br>
@@ -140,21 +140,7 @@
         </p>
   			<a href="#" class="btn-contacts">Напишите нам</a>
   		</div>
-  		<div class="write-us"><!--Всплывающее окно-->
-      	<form action="/echo" method="post">
-          <div class="close-window">
-            <img src="http://placehold.it/25x25">
-          </div>
-      		<label for="name-field">Ваше имя</label>
-      		<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
-      		<label for="email-field">Ваш e-mail</label>
-      		<input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
-      		<label for="cooment-field">Текст письма:</label>
-      		<textarea name="comment" id="cooment-field" rows="10">в свободной форме</textarea>
-      		<button type="submit" class="btn-feedback">отправить</button>
-      	</form>
-  		</div>
-      <div class="map-pointer">
+  		<div class="map-pointer">
         <img src="http://placehold.it/80x25">
       </div>
   	</div>
@@ -167,10 +153,22 @@
         <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
       </div>
       <div class="footer-text-wrapper">
-      	<h2>Давайте дружить, это выгодно</h2>
+      	<div class="footer-slogan">Давайте дружить, это выгодно</div>
       	<p>Скидка 10% для друзей из социальных сетей</p>
       </div>
 		</div>
 	</footer>
+  <div class="write-us">
+    <form action="/echo" method="post">
+      <div class="close-window"></div>
+      <label for="name-field">Ваше имя</label>
+      <input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+      <label for="email-field">Ваш e-mail</label>
+      <input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+      <label for="cooment-field">Текст письма:</label>
+      <textarea name="comment" id="cooment-field" rows="10">в свободной форме</textarea>
+      <button type="submit" class="btn-feedback">отправить</button>
+    </form>
+  </div>
 </body>
 </html>
