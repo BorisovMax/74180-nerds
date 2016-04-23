@@ -106,13 +106,13 @@
   				<h3 class="row2-title">Выполняем заказы на разработку.</h3>
   				<ul>
   					<li>
-  					<p>Веб-сайтов любой сложности</p>
+  					 Веб-сайтов любой сложности
   					</li>
   					<li>
-  					<p>Мобильных приложений для iOS и Android</p>
+  					 Мобильных приложений для iOS и Android
   					</li>
   					<li>
-  					<p>Слайдшоу и видео для корпоративных презентаций</p>
+  					 Слайдшоу и видео для корпоративных презентаций
   					</li>
   			  </ul>
   			</div>
@@ -120,13 +120,13 @@
   				<h3 class="row2-title">Как мы работаем</h3>
   				<ul>
   					<li>
-  					<p>C самоодтачей 146%</p>
+  					 C самоодтачей 146%
   					</li>
   					<li>
-  					<p>Соблюдая сроки на 100%</p>
+  					 Соблюдая сроки на 100%
   					</li>
   					<li>
-  					<p>По предоплате 50%</p>
+  					 По предоплате 50%
   					</li>
   			  </ul>
   			</div>
@@ -174,12 +174,19 @@
   <div class="write-us">
     <form action="/echo" method="post">
       <div class="close-window"></div>
-      <label for="name-field">Ваше имя</label>
-      <input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
-      <label for="email-field">Ваш e-mail</label>
-      <input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
-      <label for="cooment-field">Текст письма:</label>
-      <textarea name="comment" id="cooment-field" rows="10">В свободной форме</textarea>
+      <div class="name-field-wrapper">
+	      <label for="name-field">Ваше имя</label>
+	      <input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+	    </div>
+	    <div class="email-field-wrapper">
+	      <label for="email-field">Ваш e-mail</label>
+	      <input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+	    </div>
+	    <div class="comment-field-wrapper">
+	      <label for="cooment-field">Текст письма:</label>
+	      <textarea name="comment" id="cooment-field" rows="10">В свободной форме
+	      </textarea>
+	    </div>
       <button type="submit" class="btn-feedback">Отправить</button>
     </form>
   </div>
