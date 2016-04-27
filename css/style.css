@@ -1,6 +1,4 @@
 body {
-	width: 1200px;
-	height: 2256px;
 	font-size: 16px;
 	line-height: 22px;
 	color: #000000;
@@ -31,33 +29,43 @@ h2 {
 	margin: 0 auto;
 	padding: 0 10px;
 	outline: 1px solid green;
+	box-sizing: border-box;
 }
 .main-header {
 	margin-bottom: 80px;
 	outline: 2px solid red;
-	min-height: 70px;
-  }
+}
+.main-header-top {
+	padding-top: 27px;
+	padding-bottom: 45px;
+}
 .index-logo {
 	float: left;
 	width: 139px;
 	height: 56px;
 	margin-right: 60px;
-	margin-top: 20px;
 	outline: 2px solid yellow;
 }
 .main-navigation {
 	float: left;
 	width: 460px;
 	outline: 2px solid yellow;
-	margin-top: 60px;
-	margin-bottom: 60px;
-		
+	margin-top: 27px;
+}
+ .main-navigation  ul {
+ 	padding: 0;
+ 	margin: 0; 
+ }
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
 }
 .user-block {
 	float: right;
 	width: 95px;
 	outline: 2px solid yellow;
-	margin-top: 60px;
+	margin-top: 27px;
 }
 .slider {
 	clear: both;
@@ -79,21 +87,15 @@ h2 {
 	outline: 2px solid yellow;
 	margin-bottom: 80px;
 }
-.sites {
+.features-item {
 	float: left;
 	width: 240px;
 	margin-right: 80px;
 }
-.apps {
-	float: left;
-	width: 240px;
-}
-.presentations {
-	float: right;
-	width: 240px;
+.features-item:nth-child(3n) {
+	margin-right: 0;
 }
 .index-content {
-	margin-bottom: 80px;
 	outline: 2px solid yellow;
 }
 .index-content-row1 {
@@ -113,8 +115,26 @@ h2 {
 	margin-bottom: 90px;
 	outline: 2px solid yellow;
 }
+.portfolio-list {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}
+.portfolio-list li {
+	display: inline-block;
+	padding: 45px 10px 35px;
+	margin-right: 106px;
+	vertical-align: middle;
+	list-style: none;
+}
+.portfolio-list li:last-child {
+	margin-right: 0;
+}
 .map {
 	outline: 2px solid yellow;
+}
+.map img {
+	width: 100%;
 }
 .main-footer {
 	margin-top: 80px;
@@ -135,10 +155,10 @@ h2 {
 	outline: 2px solid yellow;
 }
 .header-slogan {
-	clear: both;
 	width: 650px;
-	margin: 80px auto;
+	margin: 0 auto;
 	outline: 2px solid yellow;
+	margin-bottom: 95px;
 }
 .sidebar {
 	float: left;
@@ -149,7 +169,6 @@ h2 {
 	float: right;
 	width: 560px;
 	outline: 2px solid yellow;
-	margin-bottom: 80px;
 }
 .gallery {
 	font-size: 0;
@@ -165,20 +184,24 @@ h2 {
 .gallery-item:nth-child(2n) {
 	margin-right: 0;
 }
+.gallery-sorting-tools {
+	margin-bottom: 25px;
+}
 .gallery-sorting-tools p {
 	float: left;
 	width: 90px;
+	margin: 0;
 	margin-right: 40px;
 }
 .sorting-btn-wrapper {
 	float: left;
 	width: 310px;
+	text-align: center;
 }
 .sorting-item-wrapper {
 	float: right;
-	width: 30px;
+	width: 60px;
 }
-.map-catalog {
-	clear: both;
-	outline: 2px solid yellow; 
+.gallery-paginator {
+	margin-bottom: 80px;
 }
