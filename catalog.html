@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Нёрдс</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<div class="container clearfix">
 			<div class="main-header-top clearfix">
@@ -14,14 +16,14 @@
 	      </div>
 				<nav class="main-navigation">
 					<ul>
-						<li class="active">
+						<li>
 							<a href="#">Студия</a>
 						</li>
 						<li>
 							<a href="#">Клиенты</a>
 						</li>
-						<li>
-							<a href="#">Магазин</a>
+						<li class="active">
+							<a>Магазин</a>
 						</li>
 						<li>
 							<a href="#">Контакты</a>
@@ -29,87 +31,101 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-	      	<a href="#" class="basket">Корзина</a>
+	      	<a href="#" class="basket"><span class="icon-basket"></span>Корзина</a>
 				</div>
 			</div>
-			<div class="header-slogan">Добро пожаловать в магазин  готовых макетов
+			<div class="header-slogan">Добро пожаловать в магазин <span>готовых макетов</span>
 			</div>
 		</div>
 	</header>
 	<main>
 		<div class="container clearfix">
 			<div class="sidebar">
-				<form name="filter" action="/echo" method="get">
+				<form class="filter" action="/echo" method="get">
 					<fieldset>
 				  	<legend>Стоимость:</legend>
-				  	<div class="price-range-wrapper">
-				  		<input type="range" name="price-range" id="price-range-field">
+				  	<div class="range-filter">
+				  		<div class="range-controls">
+				  			<div class="scale">
+				  				<div class="bar"></div>
+				  			</div>
+				  			<div class="toggle toggle-min"></div>
+				  			<div class="toggle toggle-max"></div>
+				  		</div>
+				  		<div class="price-controls">
+				  			<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+				  			<label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+				  		</div>
 				  	</div>
-				  	<div class="from-field-wrapper">
-				  	  <label for="from-field">от</label><br>
-							<input type="text" name="from" value="0" id="from-field">
-						</div>
-						<div class="to-field-wrapper">
-							<label for="to-field">до</label><br>
-						  <input type="text" name="to" value="15000" id="to-field"><br>
-						</div>
 					</fieldset>
 					<fieldset>
 	        	<legend>Сетка:</legend>
-	        	<div class="layout-field-wrapper">
-							<input type="radio" name="layout" id="adaptive">
-							<label for="adaptive">Адаптивная</label><br>
+	        	<div class="layout-field">
+		        	<label class="filter-radio">
+								<input type="radio" name="layout" id="adaptive"><span class="icon-circle-dot"></span>Адаптивная
+							</label>
 						</div>
-						<div class="layout-field-wrapper">
-							<input type="radio" name="layout" id="fixed">
-							<label for="fixed">Фиксированная</label><br>
+						<div class="layout-field">
+							<label class="filter-radio">
+								<input type="radio" name="layout" id="fixed"><span class="icon-circle"></span>Фиксированная
+							</label>
 						</div>
-						<div class="layout-field-wrapper">
-							<input type="radio" name="layout" id="fluid">
-							<label for="fluid">Резиновая</label><br>
+						<div class="layout-field">
+							<label class="filter-radio">
+								<input type="radio" name="layout" id="fluid"><span class="icon-circle"></span>Резиновая
+							</label>
 						</div>
 					</fieldset>
 					<fieldset>
 	        	<legend>Особенности:</legend>
-	        	<div class="features-field-wrapper">
-							<input type="checkbox" name="slider" id="slider-field" checked>
-							<label for="slider-field">Слайдер</label><br>
+	        	<div class="features-field">
+		        	<label class="filter-checkbox">
+								<input type="checkbox" name="slider" id="slider-field" checked><span class="icon-check-on"></span>
+								Слайдер
+							</label>
 						</div>
-						<div class="features-field-wrapper">
-	        		<input type="checkbox" name="features" id="fetures-field">
-	        		<label for="fetures-field">Блок преимуществ</label><br>
+						<div class="features-field">
+							<label class="filter-checkbox">
+	        			<input type="checkbox" name="features" id="fetures-field"><span class="icon-check-off"></span>Блок преимуществ
+	        		</label>
 	        	</div>
-	        	<div class="features-field-wrapper">
-	        		<input type="checkbox" name="news" id="news-field" checked>
-	        		<label for="news-field">Новости</label><br>
+	        	<div class="features-field">
+	        		<label class="filter-checkbox">
+	        			<input type="checkbox" name="news" id="news-field" checked><span class="icon-check-on"></span>Новости
+	        		</label>
 	        	</div>
-	        	<div class="features-field-wrapper">
-	        		<input type="checkbox" name="gallery" id="gallery-field">
-	        		<label for="gallery-field">Галерея</label><br>
+	        	<div class="features-field">
+	        		<label class="filter-checkbox">
+	        			<input type="checkbox" name="gallery" id="gallery-field"><span class="icon-check-off"></span>Галерея
+	        		</label>
 	        	</div>
-	        	<div class="features-field-wrapper">
-	        		<input type="checkbox" name="basket" id="basket-fied">
-	        		<label for="basket-fied">Корзина</label><br>
+	        	<div class="features-field">
+	        		<label class="filter-checkbox">
+	        			<input type="checkbox" name="basket" id="basket-fied"><span class="icon-check-off"></span>Корзина
+	        		</label>
 	        	</div>
 	        </fieldset>
-	        <input type="submit" value="отправить">
+	        <button class="btn" type="submit">показать</button>
 				</form>
 			</div>
 	    <div class="index-content-catalog">
 		  	<div class="gallery-sorting-tools clearfix">
-		  		<p>Сортировать</p>
+		  		<p>Сортировать:</p>
 		  		<div class="sorting-btn-wrapper">
 		  			<a class="sorting-btn" href="#">По цене</a>
 		  			<a class="sorting-btn" href="#">По типу</a>
 		  			<a class="sorting-btn" href="#">По функционалу</a>
 		  		</div>
 		  		<div class="sorting-item-wrapper">
-		  			<button class="sorting-item"></button>
-		  			<button class="sorting-item"></button>
+		  			<button class="sorting-item"><span class="icon-down-dir"></span></button>
+		  			<button class="sorting-item"><span class="icon-up-dir"></span></button>
 		  		</div>
 		  	</div>
 		  	<div class="gallery clearfix">
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 		  			<img src="img/item-image1.jpg" width="240" height="240" alt="Aviator">
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
@@ -120,26 +136,35 @@
 	        	</div>
 		  		</div>
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 		  			<img src="img/item-image2.jpg" width="240" height="240" alt="Sunset">
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
 	        			<h2 class="gallery-item-title">Sunset</h2>
 	        		</a>
-	        		<p>Интернет-магазин с личным кабинетом</p>
+	        		<p>Интернет-магазин</br> с личным кабинетом</p>
 	        		<a class="btn" href="#">10000 р.</a>
 	        	</div>
 		  		</div>
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 		  			<img src="img/item-image3.jpg" width="240" height="240" alt="Forte">
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
 	        			<h2 class="gallery-item-title">Forte</h2>
 	        		</a>
-	        		<p>Отличный макет для личного блога</p>
+	        		<p>Отличный макет<br> для личного блога</p>
 	        		<a class="btn" href="#">5000 р.</a>
 	        	</div>
 		  		</div>
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 		  			<img src="img/item-image4.jpg" width="240" height="240" alt="Modern organic thai">
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
@@ -150,6 +175,9 @@
 	        	</div>
 		  		</div>
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 	        	<img src="img/item-image5.jpg" width="240" height="240" alt="Avenue" >
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
@@ -160,6 +188,9 @@
 	        	</div>
 		  		</div>
 		  		<div class="gallery-item">
+		  			<div class="browser">
+		  				<img class="browser-img" src="img/browser-image.png" width="240" height="30px">
+		  			</div>
 		  			<img src="img/item-image6.jpg" width="240" height="240" alt="Dovetail">
 	        	<div class="gallery-item-description">
 	        		<a class="gallery-item-name" href="#">
@@ -171,14 +202,14 @@
 		  		</div>
 	      </div>
 		    <div class="gallery-paginator">
-		  		<a href="#" class="btn">1</a>
+		  		<a class="btn btn-active">1</a>
 	        <a href="#" class="btn">2</a>
 	        <a href="#" class="btn">3</a>
 	        <a href="#" class="btn gallery-next">следующая</a>
 		  	</div>
 			</div>
 		</div>
-		<div class="map-catalog">
+		<div class="map">
 	      <img src="img/map.jpg" width="1199" height="416" alt="map">
 	  		<div class="contacts">
 	  			<div class="contacts-title">Nёrds design studio</div>
@@ -192,30 +223,38 @@
 	  </div>
 	</main>
 	<footer class="main-footer">
-	 	<div class="container clearfix">
+		<div class="container clearfix">
 			<div class="footer-social">
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-        <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-        <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<a href="#" class="social-btn">Вконтакте<span class="icon-vk"></span></a>
+        <a href="#" class="social-btn">Фейсбук<span class="icon-facebook"></span></a>
+        <a href="#" class="social-btn">Инстаграм<span class="icon-instagramm"></span></a>
       </div>
-      <div class="footer-text-wrapper">
-      	<div class="footer-slogan">Давайте дружить, это выгодно</div>
+      <div class="footer-text">
+      	<div class="footer-slogan">Давайте дружить, это выгодно!</div>
       	<p>Скидка 10% для друзей из социальных сетей</p>
       </div>
 		</div>
 	</footer>
 	<div class="modal-content">
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <!-- <form action="/echo" method="post">
-      <div class="close-window"></div>
-        <label for="name-field">Ваше имя</label>
-      	<input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
-      	<label for="email-field">Ваш e-mail</label>
-      	<input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
-      	<label for="cooment-field">Текст письма:</label>
-      	<textarea name="comment" id="cooment-field" rows="10">В свободной форме</textarea>
-      	<button type="submit" class="btn-feedback">Отправить</button>
-      </form> -->
+		<form class="feedback-form" action="#" method="post">
+			<div class="field-row clearfix">
+	     	<div class="name-field">
+		      <label for="name-field">Ваше имя:</label>
+		      <input type="text" name="name" value="" id="name-field" placeholder="представьтесь, пожалуйста">
+		   	</div>
+		    <div class="email-field">
+		      <label for="email-field">Ваш e-mail</label>
+		      <input type="text" name="email" value="" id="email-field" placeholder="для отправки ответа">
+		    </div>
+		  </div>
+		  <div class="comment-field">
+		    <label for="cooment-field">Текст письма:</label>
+		    <textarea name="comment" id="cooment-field" rows="5" placeholder="В свободной форме">
+		    </textarea>
+		  </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
   </div>
 </body>
 </html>
