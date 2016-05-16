@@ -373,11 +373,12 @@ h2 {
 .index-content-right {
 	float: right;
 	width: 240px;
+	margin-left: 10px;
 }
 .index-content-right img {
  	display: block;
  	margin-bottom: 30px;
- 	margin-left: 50px;
+ 	margin-left: 35px;
  }
  .index-content-right span {
  	position: relative;
@@ -475,24 +476,35 @@ h2 {
 }
 .map {
 	position: relative;
-}
-.map img {
+
 	width: 100%;
+	min-height: 416px;
+	margin: 50px auto;
 }
-.map .contacts {
+.map-info {
 	position: absolute;
-	top: 85px;
-	left: 190px;
+	top: 88px;
+	left: 50%;
+	z-index: 200;
 
-	width: 250px;
-	padding: 30px 20px;
-	padding-right: 0;
+	width: 210px;
+	padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-	color: #666666;
-	background: #ffffff;
+  color: #666666;
+  background-color: #ffffff;
+  transform: translateX(-440px);
 }
-.contacts .contacts-title {
-	margin-bottom: 16px;
+.map-canvas{
+	width: 100%;
+  min-height: 416px;
+
+  background-color: #ffffff;
+}
+.map-info-title {
+	margin: 0;
+	margin-bottom: 15px;
 
 	font-size: 16px;
 	line-height: 30px;
@@ -501,19 +513,20 @@ h2 {
 
 	color: #000000;
 }
-.contacts p {
+.map-info p {
 	margin: 0;
+	margin-bottom: 30px;
 
 	font-size: 16px;
 	line-height: 20px;
 }
- .contacts .adress {
-	margin-bottom: 24px;
+.map-info span {
+	display: block;
+	margin-top: 25px;
 }
-.btn-contacts {
+.contact-btn {
 	display: inline-block;
-	margin-top: 30px;
-	margin-bottom: 0;
+	margin-bottom: 26px;
 	padding: 10px 54px;
 
 	font-size: 12px;
@@ -529,7 +542,9 @@ h2 {
 	position: absolute;
 	top: 1640px;
 	left: 50%;
+	z-index: 400;
 
+	display: block;
 	width: 460px;
 	margin-left: -320px;
 	padding: 50px 80px;
@@ -625,7 +640,7 @@ h2 {
 }
 .feedback-form .btn {
 	display: inline-block;
-	width: 100%;
+	width: 485px;
 	margin: 50px 0;
 	margin-bottom: 0;
 	padding: 12px 195px;
@@ -643,6 +658,7 @@ h2 {
 	border: none;
   outline: none;
   cursor: pointer;
+  outline: 1px solid yellow;
 }
 .footer-slogan {
 	margin-bottom: 10px;
@@ -681,7 +697,7 @@ h2 {
 	background: #e1e1e1;
 	border-radius: 50%;
 }
-.social-btn:nth-child(3) {
+.social-btn:nth-child(3n) {
 	margin-right: 0;
 }
 .social-btn:hover {
@@ -704,25 +720,20 @@ h2 {
 	margin-bottom: 29px;
 }
 .inner-page .header-slogan {
-	width: 655px;
+	width: 650px;
 	margin: 0 auto;
 	margin-bottom: 93px;
 
 	font-size: 40px;
 	line-height: 45px;
 	text-transform: uppercase;
-	text-align: left;
-}
-.header-slogan span {
-	display: block;
-
 	text-align: center;
 }
 .inner-page .modal-content {
 	top: 275px;
 	left: 275px;
 
-	display: none;
+	display: block;
 	margin-left: 80px;
 }
 .sidebar {
