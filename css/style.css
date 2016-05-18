@@ -1,5 +1,5 @@
 body {
-	min-width: 900px;
+	min-width: 800px;
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -510,10 +510,13 @@ h2 {
   min-height: 416px;
 
   background-color: #ffffff;
+  background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 .map-info-title {
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 
 	font-size: 16px;
 	line-height: 30px;
@@ -530,7 +533,7 @@ h2 {
 }
 .map-info span {
 	display: block;
-	margin-top: 25px;
+	margin-top: 20px;
 }
 .contact-btn {
 	display: inline-block;
@@ -547,14 +550,16 @@ h2 {
 	border-radius: 3px;
 }
 .modal-content {
-	position: absolute;
-	top: 1640px;
+	position: fixed;
+	top: 50%;
 	left: 50%;
 	z-index: 400;
 
 	display: none;
 	width: 460px;
-	margin-left: -320px;
+	height: 330px;
+	margin-left: -325px;
+	margin-top: -170px;
 	padding: 45px 80px;
 	padding-right: 90px;
 
@@ -599,8 +604,9 @@ h2 {
 }
  .feedback-form input[type="text"], 
  .feedback-form textarea {
- 	width: 205px;
-	padding: 10px;
+ 	width: 196px;
+	padding: 10px 15px;
+	padding-right: 8px;
 
 	font-family: "Roboto", "Arial", sans-serif;
  	font-size: 12px;
@@ -621,13 +627,13 @@ h2 {
  	border: 2px solid #d7dcde;
  }
  .feedback-form textarea {
- 	width: 460px;
+ 	width: 440px;
  	padding: 10px;
 
  	resize: none;
  }
  .feedback-form .field-row {
-	margin-bottom: 23px;
+	margin-bottom: 5px;
  }
 .feedback-form label {
 	display: block;
@@ -635,14 +641,15 @@ h2 {
 }
 .name-field {
 	float: left;
-	width: 205px;
+	width: 220px;
 }
 .email-field {
 	float: right;
-	width: 205px;
+	width: 220px
+	;
 }
 .main-footer {
-	padding-top: 70px;
+	padding-top: 76px;
 	padding-bottom: 75px;
 
 	color: #000000;
@@ -650,10 +657,10 @@ h2 {
 }
 .feedback-form .btn {
 	display: inline-block;
-	width: 485px;
+	width: 460px;
 	margin: 40px 0;
 	margin-bottom: 0;
-	padding: 12px 195px;
+	padding: 10px 195px;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -728,24 +735,22 @@ h2 {
 }
 /*Cтили каталога*/
 .inner-page .main-header-top {
-	margin-bottom: 29px;
+	margin-bottom: 22px;
 }
 .inner-page .header-slogan {
-	width: 650px;
-	margin: 0 auto;
-	margin-bottom: 93px;
+	width: 660px;
+  margin: 0 auto;
+  margin-bottom: 81px;
+  padding-right: 12px;
 
-	font-size: 40px;
-	line-height: 45px;
+  font-size: 40px;
+  line-height: 46px;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 }
 .inner-page .modal-content {
-	top: 275px;
-	left: 275px;
-
-	display: block;
-	margin-left: 80px;
+	display: none;
 }
 .sidebar {
 	float: left;
@@ -758,7 +763,7 @@ h2 {
 	height: 41px;
 	padding-right: 20px;
 	padding-left: 20px;
-	padding-top: 39px;
+	padding-top: 36px;
 	margin-bottom: 14px;
 
 	background: #f1f1f1;
@@ -777,7 +782,7 @@ h2 {
  }
  .range-controls .toggle {
  	position: absolute;
- 	top: 30px;
+ 	top: 27px;
  	left: 0;
 
  	width: 4px;
@@ -793,7 +798,7 @@ h2 {
 	left: 20px;
  }
 .range-controls .toggle-max {
-	left: 135px;
+	left: 160px;
 }
 .price-controls {
 	font-size: 0;
@@ -834,13 +839,21 @@ legend {
 	color: #000000;
 }
 fieldset {
-	margin-bottom: 48px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
 
 	border: none;
 	outline: none;
 }
+fieldset:first-child {
+	margin-bottom: 45px;
+}
+fieldset:nth-child(2) {
+	margin-bottom: 28px;
+}
 .layout-field {
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 .layout-field .filter-radio {
 	position: relative;
@@ -887,7 +900,7 @@ fieldset {
 	left: -7px;
 }
 .features-field {
-	margin-bottom: 15px;
+	margin-bottom: 17px;
 }
 .features-field .filter-checkbox {
 	position: relative;
@@ -992,8 +1005,8 @@ fieldset {
 	width: 160px;
 	height: 135px;
 	padding: 0 20px;
-	padding-top: 35px;
-	padding-bottom: 30px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 
 	background: #ffffff;
 }
@@ -1005,7 +1018,7 @@ fieldset {
 }
 .gallery-item-name {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 
 	text-decoration: none;
 }
@@ -1021,7 +1034,7 @@ fieldset {
 }
 .gallery-item-description p {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 
 	font-size: 14px;
 	line-height: 18px;
@@ -1031,7 +1044,9 @@ fieldset {
 }
 .gallery-item-description .btn {
 	display: block;
-	padding: 10px 35px;
+	width: 75px;
+	margin: 0 auto;
+	padding: 15px 32px;
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 18px;
@@ -1052,13 +1067,14 @@ fieldset {
 	box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
 }
 .gallery-sorting-tools {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 .gallery-sorting-tools p {
 	float: left;
 	width: 90px;
 	margin: 0;
-	margin-right: 15px;
+	margin-right: 32px;
+	padding-top: 5px;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -1074,12 +1090,14 @@ fieldset {
 .sorting-btn {
 	display: inline-block;
 	margin-right: 45px;
+	padding-top: 5px;
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 12px;
 	line-height: 18px;
 	text-transform: uppercase;
 	text-decoration: none;
+	vertical-align: middle;
 
 	color:#000000;
 	opacity: 0.3;
@@ -1098,7 +1116,9 @@ fieldset {
 .sorting-item-wrapper {
 	position: relative;
 	float: right;
-	width: 85px;
+	width: 75px;
+
+	margin-top: 5px;
 }
 .sorting-item-wrapper .sorting-item {
 	font-size: 0;
@@ -1134,12 +1154,14 @@ fieldset {
 	right: 5px;
 }
 .gallery-paginator {
-	margin-bottom: 80px;
+	margin-bottom: 30px;
+
+	font-size: 0;
 }
 .gallery-paginator .btn {
 	display: inline-block;
 	padding: 10px 15px;
-	margin-right: 10px;
+	margin-right: 12px;
 
 	font-size: 12px;
 	line-height: 18px;
@@ -1160,12 +1182,15 @@ fieldset {
 .gallery-paginator .btn-active,
 .gallery-paginator .btn-active:hover,
 .gallery-paginator .btn-active:active {
-	padding: 9px 14px;
+	padding: 8px 13px;
 
 	background: #ffffff;
 	border: 2px solid #f2f2f2;
 	box-shadow: none;
 }
 .gallery-paginator .gallery-next {
+	padding-left: 30px;
+	padding-right: 30px;
+
 	text-transform: uppercase;
 }
